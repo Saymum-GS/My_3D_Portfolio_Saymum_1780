@@ -1,0 +1,51 @@
+===============================
+   REACT + VITE SETUP GUIDE
+   Windows 11 (VS Code)
+===============================
+
+1. CHECK NODE, NPM, NPX
+-------------------------------
+node -v
+npm -v
+npx -v
+
+
+2. DOWNLOAD & INSTALL NODE.JS (v22.12.0)
+-------------------------------
+Invoke-WebRequest "https://nodejs.org/dist/v22.12.0/node-v22.12.0-x64.msi" -OutFile "node22.msi"
+Start-Process ".\node22.msi"
+
+(After installation, close and reopen VS Code)
+
+Check again:
+node -v
+npm -v
+
+
+3. FIX POWERSHELL EXECUTION POLICY (npm.ps1 error)
+-------------------------------
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+(If needed)
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+
+
+4. GO TO PROJECT FOLDER
+-------------------------------
+cd D:\saymum
+
+
+5. INSTALL PROJECT DEPENDENCIES
+-------------------------------
+npm install
+
+
+6. RUN THE PROJECT (Vite)
+-------------------------------
+npm run dev
+
+
+===============================
+   PROJECT IS NOW RUNNING
+   LOCAL URL (Example):
+   http://localhost:5173
+===============================

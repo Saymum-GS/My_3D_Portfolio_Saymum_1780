@@ -1,0 +1,5 @@
+We used tailwind website to install vite with tailwind
+now we are using framer motion to add animations
+
+
+
